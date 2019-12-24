@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+
+    int l,i,c=0;
+    printf("Enter the length of the String");
+    scanf("%d", &l);
+        char a[l];
+    
+    for(i=0; i<=l; i++)
+    {
+        scanf("%s", &a[i]);
+    
+    }
+    printf("The reverse String is ");
+    for(i=l;i>=0;i--)
+    {
+
+        printf("%c", a[i]);
+    }
+    printf("\n");
+    for(i=0;i<=l;i++)
+    {
+        if(a[i]=='A' || a[i]=='E' || a[i]=='I' || a[i]=='O' || a[i]=='U')
+        c++;
+    }
+    printf("The number of vowels are %d",  c);
+
+    return 0;
+}
