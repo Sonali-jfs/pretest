@@ -1,0 +1,12 @@
+SELECT employee_id, TO_CHAR(hire_date, ’MM/YY’) Month_Hired
+FROM employees
+WHERE last_name = ’Higgins’;
+
+
+
+SELECT last_name, hire_date
+FROM employees
+WHERE hire_date = TO_DATE(’May 24, 1999’, ’fxMonth DD, YYYY’);
+
+
+SELECT TO_DATE('2012-06-05', 'YYYY-MM-DD') FROM dual;
